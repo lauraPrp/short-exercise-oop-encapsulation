@@ -14,8 +14,8 @@ public class WeatherReporterTest {
         WeatherReporter wr = new WeatherReporter("London",4.0);
         WeatherReporter wr2 = new WeatherReporter("California",-2.0);
         WeatherReporter wr3 = new WeatherReporter("Cape Town",0.0);
-        assertEquals("I am in London and it is 🌦. It's too cold 🥶! The temperature in Fahrenheit is 39,2.",wr.print());
-        assertEquals("I am in California and it is 🌅. It's too cold 🥶! The temperature in Fahrenheit is 28,4.",wr2.print());
+        assertEquals("I am in London and it is 🌦. It's too cold 🥶! The temperature in Fahrenheit is 39.2.",wr.print());
+        assertEquals("I am in California and it is 🌅. It's too cold 🥶! The temperature in Fahrenheit is 28.4.",wr2.print());
         assertEquals("I am in Cape Town and it is 🌤. It's too cold 🥶! The temperature in Fahrenheit is 32.",wr3.print());
 
 
@@ -27,7 +27,7 @@ public class WeatherReporterTest {
         WeatherReporter wr3 = new WeatherReporter("Cape Town",38);
         assertEquals("I am in London and it is 🌦. It's too hot 🥵! The temperature in Fahrenheit is 95.",wr.print());
         assertEquals("I am in California and it is 🌅. It's too hot 🥵! The temperature in Fahrenheit is 104.",wr2.print());
-        assertEquals("I am in Cape Town and it is 🌤. It's too hot 🥵! The temperature in Fahrenheit is 100,4.",wr3.print());
+        assertEquals("I am in Cape Town and it is 🌤. It's too hot 🥵! The temperature in Fahrenheit is 100.4.",wr3.print());
 
     }
     @Test
@@ -38,7 +38,7 @@ public class WeatherReporterTest {
 
         assertEquals("I am in London and it is 🌦. Ahhh...it's just right 😊! The temperature in Fahrenheit is 59.",wr.print());
         assertEquals("I am in California and it is 🌅. Ahhh...it's just right 😊! The temperature in Fahrenheit is 68.",wr2.print());
-        assertEquals("I am in Cape Town and it is 🌤. Ahhh...it's just right 😊! The temperature in Fahrenheit is 64,4.",wr3.print());
+        assertEquals("I am in Cape Town and it is 🌤. Ahhh...it's just right 😊! The temperature in Fahrenheit is 64.4.",wr3.print());
 
 
     }
