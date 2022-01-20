@@ -7,9 +7,7 @@ public class WeatherReporter {
     private String location;
     private double temperature;
 
-    public final String LONDON = "London";
-    public final String CALIFORNIA = "California";
-    public final String CAPE_TOWN = "Cape Town";
+
 
     public WeatherReporter(String location, double temperature) {
         this.location = location;
@@ -25,11 +23,14 @@ public class WeatherReporter {
 
     public String print() {
         return MessageFormat.format("I am in {0} and it is {1}. {2} The temperature in Fahrenheit is {3}.",
-                location, check1(), check2(), convertCelsiusToFahreneit(temperature));
+                location, checkLocation(), checkTemperature(), convertCelsiusToFahreneit(temperature));
 
     }
 
-    public String check1() {
+    public String checkLocation() {
+        final String LONDON = "London";
+        final String CALIFORNIA = "California";
+        final String CAPE_TOWN = "Cape Town";
         return switch (location) {
             case LONDON -> "🌦";
             case CALIFORNIA -> "🌅";
@@ -38,9 +39,9 @@ public class WeatherReporter {
         };
     }
 
-    public String check2() {
-        int HOT_TEMP = 30;
-        int COLD_TEMP = 10;
+    public String checkTemperature() {
+       final int HOT_TEMP = 30;
+       final  int COLD_TEMP = 10;
         if (temperature > HOT_TEMP) {
 
             return "It's too hot 🥵!";
