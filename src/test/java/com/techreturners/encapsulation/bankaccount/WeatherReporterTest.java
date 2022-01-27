@@ -1,11 +1,13 @@
 package com.techreturners.encapsulation.bankaccount;
 import static org.junit.Assert.assertEquals;
+import static org.testng.Assert.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import com.techreturners.encapsulation.bankaccount.model.WeatherReporter;
 import org.junit.Test;
+
 
 public class WeatherReporterTest {
 
